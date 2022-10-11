@@ -3,11 +3,54 @@
 @import "_variables";
 @import "modules/hello.scss";
 
-body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
+@mixin mobile-header-100 {
+  font-weight: 700;
+  font-size:36px;
+  line-height: 48px;;
+}
+
+@mixin mobile-header-200 {
+  font-weight: 700;
+  font-size:26px;
+  line-height: 32px;;
+}
+
+@mixin mobile-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+@mixin mobile-text-bold {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+@mixin mobile-console {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.header__heading {
+  color: #234361;
+}
+.header__main {
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  display:flex;
+  flex-direction:column;
+  margin: 64px 16px 88px 16px;
+}
+
+.header__photo {
+width:96px;
+height:96px;
+border-radius:50%;
+margin-bottom:40px;
+}
+
+.skills {
+  background:#1070CA;
+  display:grid;
 }
