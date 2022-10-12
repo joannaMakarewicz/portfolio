@@ -3,7 +3,7 @@
 @import "_variables";
 @import "modules/hello.scss";
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&family=Roboto+Mono&display=swap');
 
 @mixin mobile-header-100 {
   font-weight: 700;
@@ -72,11 +72,12 @@
 @mixin list {
   font-weight: 500;
   font-size: 16px;
-  line-height: 34px;  
+  line-height: 36px;  
 }
 
 body {
   font-family: 'Nunito', sans-serif;
+  letter-spacing: 1px;
 }
 
 .header__content {
@@ -148,6 +149,11 @@ margin-bottom:40px;
   margin-right:12px;
 }
 
+.skills__dot--sth::before {
+  color:#DBEAF7;
+}
+
+
 .skills__heading {
   @include mobile-header-100();
   margin:0;
@@ -173,5 +179,8 @@ margin-top:64px;
   color:#DBEAF7;
   margin:0;
   padding:0;
+}
+
+.skills__list--2 {
   list-style:none;
 }
