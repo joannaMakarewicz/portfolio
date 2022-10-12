@@ -80,8 +80,12 @@ body {
 }
 
 .footer {
-  padding:64px 16px 88px 16px;
   margin:0;
+}
+
+.footer__contact {
+  height:24px;
+  width:24px;
 }
 
 .footer__content {
@@ -98,11 +102,26 @@ body {
   text-align:center;
 }
 
+.footer__item {
+background:white;
+border-radius:50px;
+display:flex;
+height:48px; 
+justify-content:center;
+align-items:center;
+ width:48px;
+}
+
+.footer__item--i {
+  margin: 0 24px;
+}
+
 .footer__link {
   @include text-bold();
   background: #4DA8FF;
   border-radius: 64px;
   color:white;
+  display:flex;
   padding: 4px 24px;
   text-decoration: none;
   text-align: center;
@@ -112,6 +131,16 @@ body {
   display:flex;
   justify-content: space-around;
   margin-bottom: 64px;
+}
+
+.footer__main {
+  align-items: center;
+  background:#DBEAF7;
+  display:flex;
+  flex-direction:column;
+  margin:0;
+  padding: 64px 16px 88px 16px;
+  min-width:288px;
 }
 
 .header__content {
@@ -147,7 +176,7 @@ body {
 .header__photo {
 width:96px;
 height:96px;
-border-radius:50%;
+border-radius:50px;
 margin-bottom:40px;
 }
 
