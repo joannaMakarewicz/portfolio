@@ -70,14 +70,48 @@
 }
 
 @mixin list {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 36px;  
 }
 
 body {
   font-family: 'Nunito', sans-serif;
-  letter-spacing: 1px;
+}
+
+.footer {
+  padding:64px 16px 88px 16px;
+  margin:0;
+}
+
+.footer__content {
+  @include mobile-text();
+  color:#425A70;
+  margin:32px 0px 56px 0px;
+  text-align:center;
+}
+
+.footer__heading {
+  @include mobile-header-100();
+  color:#234361;
+  margin:0;
+  text-align:center;
+}
+
+.footer__link {
+  @include text-bold();
+  background: #4DA8FF;
+  border-radius: 64px;
+  color:white;
+  padding: 4px 24px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.footer__list {
+  display:flex;
+  justify-content: space-around;
+  margin-bottom: 64px;
 }
 
 .header__content {
@@ -101,7 +135,6 @@ body {
   padding: 4px 24px;
   text-decoration: none;
   text-align: center;
-  
 }
 .header__main {
   align-items: center;
@@ -126,6 +159,28 @@ margin-bottom:40px;
   @include mobile-text-bold();
   color:#4DA8FF;
 }
+
+.projects {
+  display:grid;
+  padding:64px 16px 88px 16px;
+  margin:0;
+}
+
+.projects__content {
+  @include mobile-text();
+  color:#425A70;
+  margin:32px 0px 46px 0px;
+  text-align:center;
+}
+
+.projects__heading {
+  @include mobile-header-100();
+  color:#234361;
+  margin:0;
+  text-align:center;
+}
+
+
 
 .skills {
   background:#1070CA;
@@ -183,4 +238,8 @@ margin-top:64px;
 
 .skills__list--2 {
   list-style:none;
+}
+
+.skills__list--special {
+  padding:0px 0px 0px 16px;
 }
