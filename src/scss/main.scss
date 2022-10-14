@@ -250,6 +250,11 @@ body {
   color: #808082;
 }
 
+.header {
+  display:flex;
+  justify-content:center;
+}
+
 .header__content {
   @include mobile-text();
   color: #425a70;
@@ -278,6 +283,7 @@ body {
   flex-direction: column;
   margin: 64px 16px 88px 16px;
   min-width: 288px;
+  max-width: 988px;
 }
 
 .header__photo {
@@ -403,6 +409,19 @@ body {
     display:grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 24px;
+  }
+
+  .header__summary {
+    display:flex;
+  }
+
+ 
+.header__summary::before {
+    content:url(../assets/icons/nawias-open.png);
+  }
+
+  .header__summary::after {
+    content:url(../assets/icons/nawias-close.png);
   }
 
   .projects {
