@@ -87,6 +87,7 @@ body {
   margin: 0;
 }
 
+
 .footer__contact {
   color:#4DA8FF;
   height: 24px;
@@ -134,7 +135,7 @@ body {
 
 .footer__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: 64px;
 }
 
@@ -379,6 +380,25 @@ body {
 }
 
 @media screen and (min-width:768px){
+
+  .footer__article {
+  display:flex;
+  justify-content:center;
+  width:100%;
+  }
+
+  .footer__content {
+    margin-bottom:128px;
+  }
+
+  .footer__list {
+    margin:0 100px 0 0;
+  }
+
+  .footer__main {
+    padding: 80px 16px 176px 16px;
+  }
+
   .frame {
     display:grid;
     grid-template-columns: 1fr 1fr;
