@@ -23,32 +23,34 @@
     <!-- <link rel="manifest" href="manifest.json" /> -->
   </head>
   <body>
+    <header class="header">
+      <section class="header__main">
+        <img
+          class="header__photo"
+          src="../assets/img/joanna-makarewicz.jpg"
+          alt="Joanna Makarewicz's photography"
+        >
+        <h1 class="header__heading">
+          My name is Joanna and I’m an aspiring
+          <span class="header__special">Frontend developer</span> and a keen
+          books lover.
+        </h1>
+        <p class="header__content">
+          You might be interested in checking the list of
+          <span class="header__special2">my skills</span>. Don’t forget to
+          have a glimpse at <span class="header__special2">my projects</span>.
+          Currently I’m looking for a new challenges so if you have one -
+          <span class="header__special2">contact me </span>😊
+        </p>
+        <a class="header__link" href="mailto:joanna.milun@gmail.com">joanna.milun@gmail.com</a>
+      </section>
+    </header>
     <main>
-      <header class="header">
-        <section class="header__main">
-          <img
-            class="header__photo"
-            src="../assets/img/joanna-makarewicz.jpg"
-            alt="Joanna Makarewicz's photography"
-          >
-          <h1 class="header__heading">
-            My name is Joanna and I’m an aspiring
-            <span class="header__special">Frontend developer</span> and a keen
-            books lover.
-          </h1>
-          <p class="header__content">
-            You might be interested in checking the list of
-            <span class="header__special2">my skills</span>. Don’t forget to
-            have a glimpse at <span class="header__special2">my projects</span>.
-            Currently I’m looking for a new challenges so if you have one -
-            <span class="header__special2">contact me </span>😊
-          </p>
-          <a class="header__link" href="mailto:joanna.milun@gmail.com">joanna.milun@gmail.com</a>
-        </section>
-      </header>
+
 
       <section class="skills">
         <h2 class="skills__heading">My skills</h2>
+        <div class="skills__summary">
         <article class="skills__article">
           <img
             class="skills__image"
@@ -108,6 +110,7 @@
             <li>Websockets</li>
           </ul>
         </article>
+      </div>
       </section>
 
       <section class="projects">
@@ -118,31 +121,31 @@
         </p>
         <div class="frame frame--js"></div>
       </section>
-
-      <footer class="footer">
-        <section class="footer__main">
-          <h2 class="footer__heading">Contact me</h2>
-          <p class="footer__content">
-            I’m open for new opportunities. If you have one for me we should
-            talk!
-          </p>
-          <div class="footer__list">
-            <a class="footer__item" href="https://github.com/joannaMakarewicz" target="link to github"
-              ><img class="footer__contact" src="../assets/icons/github.png"
-            /></a>
-            <a class="footer__item footer__item--l" href="https://www.linkedin.com/in/joanna-makarewicz/" target="link to LinkedIn"
-              ><img
-                img
-                class="footer__contact"
-                src="../assets/icons/linkedin.svg"
-            /></a>
-            <a class="footer__item" href="https://m.facebook.com/100069522572670/" target="link to facebook"
-              ><img class="footer__contact" src="../assets/icons/FB.png"
-            /></a>
-          </div>
-          <a class="footer__link" href="mailto:joanna.milun@gmail.com">joanna.milun@gmail.com</a>
-        </section>
-      </footer>
     </main>
+    
+    <footer class="footer">
+      <section class="footer__main">
+        <h2 class="footer__heading">Contact me</h2>
+        <p class="footer__content">
+          I’m open for new opportunities. If you have one for me we should
+          talk!
+        </p>
+        <div class="footer__list">
+          <a class="footer__item" href="https://github.com/joannaMakarewicz" target="link to github"
+            ><img class="footer__contact" src="../assets/icons/github.png"
+          /></a>
+          <a class="footer__item footer__item--l" href="https://www.linkedin.com/in/joanna-makarewicz/" target="link to LinkedIn"
+            ><img
+              img
+              class="footer__contact"
+              src="../assets/icons/linkedin.svg"
+          /></a>
+          <a class="footer__item" href="https://m.facebook.com/100069522572670/" target="link to facebook"
+            ><img class="footer__contact" src="../assets/icons/FB.png"
+          /></a>
+        </div>
+        <a class="footer__link" href="mailto:joanna.milun@gmail.com">joanna.milun@gmail.com</a>
+      </section>
+    </footer>
   </body>
 </html>

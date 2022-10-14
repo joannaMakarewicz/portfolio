@@ -296,7 +296,6 @@ body {
 }
 
 .projects {
-  display: grid;
   padding: 64px 16px 88px 16px;
   margin: 0;
 }
@@ -318,7 +317,9 @@ body {
 .skills {
   background: #1070ca;
   color: white;
-  display: grid;
+  display: flex;
+  flex-direction:column;
+  align-items:center;
   padding: 64px 16px 88px 16px;
   margin: 0;
 }
@@ -327,6 +328,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width:288px;
 }
 
 .skills__dot::before {
@@ -362,7 +364,7 @@ body {
 
 .skills__list {
   @include list();
-  align-self: flex-start;
+  align-self: center;
   color: #dbeaf7;
   margin: 0;
   padding: 0;
@@ -376,3 +378,46 @@ body {
   padding: 0px 0px 0px 16px;
 }
 
+@media screen and (min-width:768px){
+  .frame {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+  }
+
+  .projects {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .skills__summary {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+  }
+}
+
+@media screen and (min-width:1024px){
+  .frame {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 24px;
+  }
+
+  .projects {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .skills__list {
+    align-self: center;
+  }
+
+  .skills__summary {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 24px;
+  }
+}
