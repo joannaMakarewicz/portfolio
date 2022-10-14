@@ -1,0 +1,114 @@
+.header {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header__content {
+    @include mobile-text();
+    color: #425a70;
+    margin: 0 0 48px 0;
+    text-align: center;
+  }
+  
+  .header__heading {
+    @include mobile-header-200();
+    color: #234361;
+    text-align: center;
+  }
+  
+  .header__link {
+    @include text-bold();
+    background: #4da8ff;
+    border-radius: 64px;
+    color: white;
+    padding: 4px 24px;
+    text-decoration: none;
+    text-align: center;
+  }
+  .header__main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 64px 16px 88px 16px;
+    min-width: 288px;
+    max-width: 988px;
+  }
+  
+  .header__photo {
+    width: 96px;
+    height: 96px;
+    border-radius: 50px;
+    margin-bottom: 40px;
+  }
+  
+  .header__sign {
+    display: none;
+  }
+  
+  .header__welcome {
+    display: none;
+  }
+  
+  .header__special {
+    color: #1070ca;
+  }
+  
+  .header__special2 {
+    @include mobile-text-bold();
+    color: #4da8ff;
+  }
+
+  @media screen and (min-width: 768px) {
+
+    .header__summary {
+      display: flex;
+    }
+  
+    .header__summary::before {
+      content: url(../assets/icons/nawias-open.png);
+    }
+  
+    .header__hand {
+      display: inline-block;
+      animation: hand 1s ease-in infinite alternate;
+    }
+  
+    .header__hello {
+      display: grid;
+      grid-template-columns: 1fr 1fr 0.5fr 0.5fr;
+      grid-template-rows: 72px 23px 1fr;
+    }
+  
+    .header__photo {
+      border-radius: 90px;
+      display: flex;
+      grid-area: 2/2/4/3;
+      height: 178px;
+      justify-content: flex-end;
+      margin: auto;
+      width: 178px;
+    }
+  
+    .header__sign {
+      display: flex;
+      grid-area: 2/3/3/4;
+      justify-content: center;
+      margin: auto;
+    }
+  
+    .header__welcome {
+      @include header-200;
+      background: #1070ca;
+      border-radius: 16px;
+      color: white;
+      display: block;
+      grid-area: 1/3/2/5;
+      margin: 0;
+      padding: 16px 19px;
+    }
+  
+    .header__summary::after {
+      content: url(../assets/icons/nawias-close.png);
+    }
+  }
+  
