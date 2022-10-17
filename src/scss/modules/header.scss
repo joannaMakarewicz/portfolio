@@ -36,9 +36,11 @@
   }
   
   .header__photo {
+    box-sizing:content-box;
+    border: 24px solid #F6F9FD;
     width: 96px;
     height: 96px;
-    border-radius: 50px;
+    border-radius: 50%;
     margin-bottom: 40px;
   }
   
@@ -81,12 +83,13 @@
     }
   
     .header__photo {
-      border-radius: 90px;
+      border-radius: 50%;
       display: flex;
       grid-area: 2/2/4/3;
       height: 178px;
       justify-content: flex-end;
       margin: auto;
+      margin-bottom:72px;
       width: 178px;
     }
   

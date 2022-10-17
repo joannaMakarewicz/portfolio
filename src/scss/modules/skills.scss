@@ -17,7 +17,7 @@
   }
   
   .skills__dot::before {
-    content:url('/src/assets/icons/small-tick.png');
+    content:url('../assets/icons/small-tick.png');
     color: #06c847;
     width: 12px;
     height: 9px;
@@ -25,7 +25,7 @@
   }
   
   .skills__dot--sth::before {
-    content:url('/src/assets/icons/small-tick-white.png');
+    content:url('../assets/icons/small-tick-white.png');
   }
   
   .skills__heading {

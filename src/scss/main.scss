@@ -12,6 +12,15 @@
 @import "../scss/modules/projects.scss";
 @import "../scss/modules/skills.scss";
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 
 @keyframes hand {
