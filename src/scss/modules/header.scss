@@ -59,6 +59,7 @@
   .header__special2 {
     @include mobile-text-bold();
     color: #4da8ff;
+    text-decoration:none;
   }
 
   @media screen and (min-width: 1024px) {
@@ -88,6 +89,7 @@
       display: grid;
       grid-template-columns: 1fr 226px 0.5fr 0.5fr;
       grid-template-rows: 72px 23px 178px;
+      margin-bottom:72px;
     }
   
     .header__photo {
@@ -110,6 +112,7 @@
 
     .header__special2 {
       @include text-bold();
+      text-decoration:underline;
     }
   
     .header__welcome {
