@@ -77,6 +77,10 @@
     .skills__list {
       align-self: center;
     }
+
+    .skills__heading {
+      @include header-100;
+    }
   
     .skills__summary {
       display: grid;

@@ -9,6 +9,7 @@
     color: #425a70;
     margin: 32px 0px 46px 0px;
     text-align: center;
+    max-width: 782px;
   }
   
   .projects__heading {
@@ -33,5 +34,13 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+
+    .projects__content {
+      @include text;
+    }
+
+    .projects__heading {
+      @include header-100;
     }
   }

@@ -72,7 +72,12 @@
     }
   
     .footer__content {
+      @include text;
       margin-bottom: 128px;
+    }
+
+    .footer__heading {
+      @include header-100;
     }
   
     .footer__list {
