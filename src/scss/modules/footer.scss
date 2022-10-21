@@ -1,29 +1,38 @@
 @import "../modules/mixin.scss";
 .footer {
-    margin: 0;
+  margin: 0;
+  &__article {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
   }
-  
-  .footer__contact {
+  &__contact {
     color: #4da8ff;
     height: 24px;
     width: 24px;
   }
-  
-  .footer__content {
+  &__content {
     @include mobile-text();
     color: #425a70;
     margin: 32px 0px 56px 0px;
     text-align: center;
+    @media screen and (min-width: 768px) {
+      @include text;
+      margin-bottom: 128px;
+    }
   }
-  
-  .footer__heading {
+  &__heading {
     @include mobile-header-100();
     color: #234361;
     margin: 0;
     text-align: center;
+    @media screen and (min-width: 768px) {
+      @include header-100;
+    }
   }
-  
-  .footer__item {
+  &__item {
     background: white;
     border-radius: 50px;
     display: flex;
@@ -31,13 +40,11 @@
     justify-content: center;
     align-items: center;
     min-width: 48px;
+    &--l {
+      margin: 0 24px;
+    }
   }
-  
-  .footer__item--l {
-    margin: 0 24px;
-  }
-  
-  .footer__link {
+  &__link {
     @include text-bold();
     background: #4da8ff;
     border-radius: 64px;
@@ -47,14 +54,15 @@
     text-decoration: none;
     text-align: center;
   }
-  
-  .footer__list {
+  &__list {
     display: flex;
     justify-content: center;
     margin-bottom: 64px;
+    @media screen and (min-width: 768px) {
+      margin: 0 100px 0 0;
+    }
   }
-  
-  .footer__main {
+  &__main {
     align-items: center;
     background: #dbeaf7;
     display: flex;
@@ -62,30 +70,8 @@
     margin: 0;
     padding: 64px 16px 88px 16px;
     min-width: 288px;
-  }
-
-  @media screen and (min-width: 768px) {
-    .footer__article {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
-  
-    .footer__content {
-      @include text;
-      margin-bottom: 128px;
-    }
-
-    .footer__heading {
-      @include header-100;
-    }
-  
-    .footer__list {
-      margin: 0 100px 0 0;
-    }
-  
-    .footer__main {
+    @media screen and (min-width: 768px) {
       padding: 80px 16px 176px 16px;
     }
   }
-  
+}
