@@ -1,18 +1,20 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](https://joannamakarewicz.github.io/portfolio/portfolio.png)
 
-# WTF Webpack Starter Kit 
+# Portfolio of Joanna Makarewicz
 
-Simple toolkit for your static websites development.
+Project was made for showing technical skills of Joanna Makarewicz - an aspiring Frontend Developer after few months of training.
 
-## How to use it?
+You can check this Project here: https://joannamakarewicz.github.io/portfolio/
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+# Description
 
-## Available scripts
+On the website you can check technical skills and examples of recent projects of Joanna Makarewicz. There is also a contact form, so you can mail to Joanna.
 
-`npm run start` - runs development mode
+##Languages
 
-`npm run build` - runs build process for production
+Languages used to build Project:
 
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
+- JS
+- SCSS
+-HTML.
 
