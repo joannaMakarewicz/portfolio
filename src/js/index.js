@@ -1,16 +1,11 @@
 import '../scss/main.scss';
 
-// uncomment the lines below to enable PWA
-// import {registerSW} from './pwa.js';
-// registerSW();
-
-/* place your code below */
 
 fetch("https://api.github.com/users/joannaMakarewicz/repos")
 .then (resp => resp.json())
 .then (resp => {
   for (let repo of resp){
-    const {name, description, html_url} = repo;
+    const {name, description, html_url, homepage} = repo;
     const myList = document.querySelector('.frame--js');
   
     const myTemplate = `        <article class="frame__main">
@@ -25,7 +20,7 @@ fetch("https://api.github.com/users/joannaMakarewicz/repos")
         <li class="frame__item frame__item--2">description:</li>
         <li class="frame__description frame__list--2">${description}</li>
         <li class="frame__item">demo:</li>
-        <li class="frame__demo frame__list--2"><a href="" target="demo version of project">see here</a></li>
+        <li class="frame__demo frame__list--2"><a href="${homepage}" target="demo version of project">see here</a></li>
         <li class="frame__item">github:</li>
         <li class="frame__git frame__list--2"><a href="${html_url}" target="code used for project">source code</a></li>
       </ul>
