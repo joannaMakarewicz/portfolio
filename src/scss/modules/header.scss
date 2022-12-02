@@ -2,22 +2,37 @@
 .header {
     display: flex;
     justify-content: center;
-  }
-  
-  .header__content {
+  &__content {
     @include mobile-text();
     color: #425a70;
     margin: 0 0 48px 0;
     text-align: center;
+    @media screen and (min-width: 1024px) {
+      @include text;}
   }
-  
-  .header__heading {
+  &__hand {
+    @media screen and (min-width: 1024px) {
+      display: inline-block;
+      animation: hand 1s ease-in infinite alternate;
+    }
+  }
+  &__heading {
     @include mobile-header-200();
     color: #234361;
     text-align: center;
+    @media screen and (min-width: 1024px) {
+      @include header-200;
+    }
   }
-  
-  .header__link {
+  &__hello {
+    @media screen and (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: 1fr 226px 0.5fr 0.5fr;
+      grid-template-rows: 72px 23px 178px;
+      margin-bottom:72px;
+    }
+  }
+  &__link {
     @include text-bold();
     background: #4da8ff;
     border-radius: 64px;
@@ -25,8 +40,11 @@
     padding: 4px 24px;
     text-decoration: none;
     text-align: center;
+    @media screen and (max-width:425px){
+      @include mobile-text-bold();
+    }
   }
-  .header__main {
+  &__main {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -34,88 +52,58 @@
     min-width: 288px;
     max-width: 988px;
   }
-  
-  .header__photo {
+  &__photo {
     box-sizing:content-box;
     border: 24px solid #F6F9FD;
     width: 96px;
     height: 96px;
     border-radius: 50%;
     margin-bottom: 40px;
-  }
-  
-  .header__sign {
-    display: none;
-  }
-  
-  .header__welcome {
-    display: none;
-  }
-  
-  .header__special {
-    color: #1070ca;
-  }
-  
-  .header__special2 {
-    @include mobile-text-bold();
-    color: #4da8ff;
-    text-decoration:none;
-  }
-
-  @media screen and (min-width: 1024px) {
-
-    .header__content {
-      @include text;
-    }
-
-    .header__summary {
-      display: flex;
-    }
-  
-    .header__summary::before {
-      content: url(../assets/icons/nawias-open.png);
-    }
-  
-    .header__hand {
-      display: inline-block;
-      animation: hand 1s ease-in infinite alternate;
-    }
-
-    .header__heading {
-      @include header-200;
-    }
-  
-    .header__hello {
-      display: grid;
-      grid-template-columns: 1fr 226px 0.5fr 0.5fr;
-      grid-template-rows: 72px 23px 178px;
-      margin-bottom:72px;
-    }
-  
-    .header__photo {
+    @media screen and (min-width: 1024px) {
       border-radius: 50%;
       grid-area: 2/2/span 2/3;
       height: 178px;
       width: 178px;
     }
-  
-    .header__sign {
+  }
+  &__sign {
+    display: none;
+    @media screen and (min-width: 1024px) {
       display: flex;
       grid-area: 2/3/3/4;
       justify-content: center;
       margin: auto;
     }
-
-    .header__special {
+  }
+  &__special {
+    color: #1070ca;
+    @media screen and (min-width: 1024px) {
       white-space: nowrap;
     }
-
-    .header__special2 {
+  }
+  &__special2 {
+    @include mobile-text-bold();
+    color: #4da8ff;
+    text-decoration:none;
+    @media screen and (min-width: 1024px) {
       @include text-bold();
       text-decoration:underline;
     }
-  
-    .header__welcome {
+  }
+  &__summary {
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      &::before {
+        content: url(../assets/icons/nawias-open.png);
+      }
+      &::after {
+        content: url(../assets/icons/nawias-close.png);
+      }
+    }
+  }
+  &__welcome {
+    display: none;
+    @media screen and (min-width: 1024px) {
       @include header-200;
       background: #1070ca;
       border-radius: 16px;
@@ -125,9 +113,7 @@
       margin: 0;
       padding: 16px 19px;
     }
-  
-    .header__summary::after {
-      content: url(../assets/icons/nawias-close.png);
-    }
   }
+}
+
   

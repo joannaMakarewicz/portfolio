@@ -53,6 +53,9 @@
     padding: 4px 24px;
     text-decoration: none;
     text-align: center;
+    @media screen and (max-width:425px){
+      @include mobile-text-bold();
+    }
   }
   &__list {
     display: flex;
